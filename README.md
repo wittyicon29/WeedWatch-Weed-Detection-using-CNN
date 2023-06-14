@@ -1,6 +1,9 @@
 # Weed-Detection-using-CNN
 This project aims to detect weeds in images using a Convolutional Neural Network (CNN) model. The project combines image data and text data to train a model that can classify images as either "weed" or "non-weed". It provides an end-to-end pipeline, including image preprocessing, text preprocessing, data combination, model training, evaluation, and deployment to a local machine using the a CLI Flask app in python.
 
+# Note 
+The dataset in a raw dataset without any preprocessing being done before on it. Due to which the images had to be labelled manually and may be prone to human error. This affected the model accuracy and maybe the predictions too. Due to which the model accuracy was 54% on training as well as validation sets. After fine-tuning and hyperparameter tuning and some more data preprocessing the accuracy may subjected to increase.
+
 # Dataset
 The dataset used in this project consists of images and corresponding labels indicating whether the image contains a weed or not. The images are stored in the train_images directory, and the labels are provided in the labels.csv file.
 
