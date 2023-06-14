@@ -1,0 +1,6 @@
+python (>= 3.6)
+numpy
+pandas
+scikit-learn
+opencv-python
+tensorFlow (>= 2.0)
