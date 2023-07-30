@@ -26,20 +26,36 @@ The model is trained on the preprocessed image data and corresponding labels. Th
 The trained model's performance is evaluated using various metrics such as accuracy, precision, and F1 score. The evaluation is performed on a separate testing dataset that was split from the original dataset during the data preparation phase.
 
 # Deployment
-The trained model can be deployed locally to make predictions on new, unseen images. The deployment involves loading the trained model, preprocessing the input image, passing it through the model, and obtaining the predictions. Deploying a machine learning model using Flask allows you to create a web application that exposes an API endpoint to make predictions based on the trained model. 
-
-The Flask app will start running, and you can send POST requests to http://localhost:5000/predict with an image file to get predictions.
+The trained model can be deployed locally to make predictions on new, unseen images. The deployment involves loading the trained model, preprocessing the input image, passing it through the model, and obtaining the predictions. 
 
 # Usage
 To use this project, follow these steps:
 
-Prepare your dataset by organizing the images in the train_images directory and providing the corresponding labels in the labels.csv file.
-Run the preprocessing steps to preprocess the images and text data.
-Combine the preprocessed data.
-Train the CNN model using the combined data.
-Evaluate the trained model's performance using the provided metrics.
-Deploy the trained model to make predictions on new images.
-Please refer to the project's code and comments within each file for more detailed instructions and configurations.
+To run the command-line application, you need to execute the Python script using the terminal or command prompt.
+
+1. Save the Python script in a file, for example, `weed_detection_app.py`.
+
+2. Open VSCode and open the integrated terminal by clicking on `View` > `Terminal` from the top menu.
+
+3. Use the terminal to navigate to the directory where you saved `weed_detection_app.py` using the `cd` command. For example, if you saved the file on your Desktop, use:
+
+```bash
+cd Desktop
+```
+
+4. Run the Python script using the following command:
+
+```bash
+python weed_detection_app.py path/to/your/image.jpg path/to/your/model.h5
+```
+
+Replace `path/to/your/image.jpg` with the path to the image you want to test, and `path/to/your/model.h5` with the path to your pre-trained TensorFlow model file.
+
+5. Press Enter to execute the command. The script will load the model, perform inference on the input image, and display the results in the terminal.
+
+Remember to install the required libraries (TensorFlow, OpenCV, etc.) and ensure you have the correct path to the model and image files in the command-line arguments.
+
+If you encounter any issues, double-check the paths and make sure all the dependencies are correctly installed.
 
 # Dependencies
 This project requires the following dependencies:
